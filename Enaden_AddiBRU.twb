@@ -1,0 +1,825 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20191.19.0123.1906                               -->
+<workbook original-version='18.1' source-build='2019.1.0 (20191.19.0123.1906)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='2011-2018_Questions' inline='true' name='federated.13se6h9059znt31asidjs1o61mub' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='2011-2018_Questions' name='textscan.14d1zzr0a1v7nv11121ps1o587r9'>
+            <connection class='textclean' cleaning='yes' compat='no' csvFile='C:/Users/pierremv/Documents/My Tableau Repository/Datasources/2019.1/AddiBRU/2011-2018_Questions.csv' dataRefreshTime='' directory='C:/Users/pierremv/Documents/My Tableau Repository/Datasources/2019.1/AddiBRU' filename='C:/Users/pierremv/AppData/Local/Temp/TableauTemp/0bjnsl5057q8ef12gioft03d5zyu/2011-2018_Questions.csv.xlsx' interpretationMode='8' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.14d1zzr0a1v7nv11121ps1o587r9' name='2011-2018_Questions.csv' table='[2011-2018_Questions#csv$]' type='table'>
+          <columns character-set='UTF-8' gridOrigin='A1:AF10001:no:A1:AF10001:1' header='yes' locale='fr_BE' separator=';'>
+            <column datatype='integer' name='Id' ordinal='0' />
+            <column datatype='integer' name='InterviewId' ordinal='1' />
+            <column datatype='integer' name='QuestionId' ordinal='2' />
+            <column datatype='string' name='Question' ordinal='3' />
+            <column datatype='integer' name='QuestionTypeId' ordinal='4' />
+            <column datatype='string' name='QuestionType' ordinal='5' />
+            <column datatype='integer' name='SectionId' ordinal='6' />
+            <column datatype='string' name='Section' ordinal='7' />
+            <column datatype='integer' name='ParentId' ordinal='8' />
+            <column datatype='string' name='ParentSection' ordinal='9' />
+            <column datatype='integer' name='RootParentId' ordinal='10' />
+            <column datatype='string' name='RootSection' ordinal='11' />
+            <column datatype='integer' name='HierarchyLevel' ordinal='12' />
+            <column datatype='string' name='InterviewDate' ordinal='13' />
+            <column datatype='integer' name='PatientId' ordinal='14' />
+            <column datatype='integer' name='IsMale' ordinal='15' />
+            <column datatype='string' name='DateOfBirth' ordinal='16' />
+            <column datatype='string' name='CountryISO' ordinal='17' />
+            <column datatype='integer' name='OrganisationId' ordinal='18' />
+            <column datatype='string' name='Organisation' ordinal='19' />
+            <column datatype='integer' name='OrganisationTypeId' ordinal='20' />
+            <column datatype='string' name='OrganisationType' ordinal='21' />
+            <column datatype='integer' name='ResponseId' ordinal='22' />
+            <column datatype='string' name='Choice' ordinal='23' />
+            <column datatype='integer' name='ParentChoiceId' ordinal='24' />
+            <column datatype='string' name='ParentChoice' ordinal='25' />
+            <column datatype='integer' name='RootChoiceId' ordinal='26' />
+            <column datatype='string' name='RootChoice' ordinal='27' />
+            <column datatype='integer' name='HlChoice' ordinal='28' />
+            <column datatype='integer' name='Visit' ordinal='29' />
+            <column datatype='integer' name='LastVisit' ordinal='30' />
+            <column datatype='integer' name='ItvYear' ordinal='31' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>Id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Id]</local-name>
+            <parent-name>[2011-2018_Questions.csv]</parent-name>
+            <remote-alias>Id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>InterviewId</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[InterviewId]</local-name>
+            <parent-name>[2011-2018_Questions.csv]</parent-name>
+            <remote-alias>InterviewId</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>QuestionId</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[QuestionId]</local-name>
+            <parent-name>[2011-2018_Questions.csv]</parent-name>
+            <remote-alias>QuestionId</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Question</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Question]</local-name>
+            <parent-name>[2011-2018_Questions.csv]</parent-name>
+            <remote-alias>Question</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LFR_RBE_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>QuestionTypeId</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[QuestionTypeId]</local-name>
+            <parent-name>[2011-2018_Questions.csv]</parent-name>
+            <remote-alias>QuestionTypeId</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>QuestionType</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[QuestionType]</local-name>
+            <parent-name>[2011-2018_Questions.csv]</parent-name>
+            <remote-alias>QuestionType</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LFR_RBE_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SectionId</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[SectionId]</local-name>
+            <parent-name>[2011-2018_Questions.csv]</parent-name>
+            <remote-alias>SectionId</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Section</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Section]</local-name>
+            <parent-name>[2011-2018_Questions.csv]</parent-name>
+            <remote-alias>Section</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LFR_RBE_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ParentId</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ParentId]</local-name>
+            <parent-name>[2011-2018_Questions.csv]</parent-name>
+            <remote-alias>ParentId</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ParentSection</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[ParentSection]</local-name>
+            <parent-name>[2011-2018_Questions.csv]</parent-name>
+            <remote-alias>ParentSection</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LFR_RBE_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RootParentId</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[RootParentId]</local-name>
+            <parent-name>[2011-2018_Questions.csv]</parent-name>
+            <remote-alias>RootParentId</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RootSection</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[RootSection]</local-name>
+            <parent-name>[2011-2018_Questions.csv]</parent-name>
+            <remote-alias>RootSection</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LFR_RBE_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HierarchyLevel</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[HierarchyLevel]</local-name>
+            <parent-name>[2011-2018_Questions.csv]</parent-name>
+            <remote-alias>HierarchyLevel</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>InterviewDate</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[InterviewDate]</local-name>
+            <parent-name>[2011-2018_Questions.csv]</parent-name>
+            <remote-alias>InterviewDate</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LFR_RBE_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PatientId</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[PatientId]</local-name>
+            <parent-name>[2011-2018_Questions.csv]</parent-name>
+            <remote-alias>PatientId</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>IsMale</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[IsMale]</local-name>
+            <parent-name>[2011-2018_Questions.csv]</parent-name>
+            <remote-alias>IsMale</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DateOfBirth</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[DateOfBirth]</local-name>
+            <parent-name>[2011-2018_Questions.csv]</parent-name>
+            <remote-alias>DateOfBirth</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LFR_RBE_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CountryISO</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[CountryISO]</local-name>
+            <parent-name>[2011-2018_Questions.csv]</parent-name>
+            <remote-alias>CountryISO</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LFR_RBE_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OrganisationId</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[OrganisationId]</local-name>
+            <parent-name>[2011-2018_Questions.csv]</parent-name>
+            <remote-alias>OrganisationId</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Organisation</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Organisation]</local-name>
+            <parent-name>[2011-2018_Questions.csv]</parent-name>
+            <remote-alias>Organisation</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LFR_RBE_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OrganisationTypeId</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[OrganisationTypeId]</local-name>
+            <parent-name>[2011-2018_Questions.csv]</parent-name>
+            <remote-alias>OrganisationTypeId</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OrganisationType</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[OrganisationType]</local-name>
+            <parent-name>[2011-2018_Questions.csv]</parent-name>
+            <remote-alias>OrganisationType</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LFR_RBE_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ResponseId</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ResponseId]</local-name>
+            <parent-name>[2011-2018_Questions.csv]</parent-name>
+            <remote-alias>ResponseId</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Choice</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Choice]</local-name>
+            <parent-name>[2011-2018_Questions.csv]</parent-name>
+            <remote-alias>Choice</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LFR_RBE_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ParentChoiceId</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ParentChoiceId]</local-name>
+            <parent-name>[2011-2018_Questions.csv]</parent-name>
+            <remote-alias>ParentChoiceId</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ParentChoice</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[ParentChoice]</local-name>
+            <parent-name>[2011-2018_Questions.csv]</parent-name>
+            <remote-alias>ParentChoice</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LFR_RBE_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RootChoiceId</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[RootChoiceId]</local-name>
+            <parent-name>[2011-2018_Questions.csv]</parent-name>
+            <remote-alias>RootChoiceId</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RootChoice</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[RootChoice]</local-name>
+            <parent-name>[2011-2018_Questions.csv]</parent-name>
+            <remote-alias>RootChoice</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LFR_RBE_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HlChoice</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[HlChoice]</local-name>
+            <parent-name>[2011-2018_Questions.csv]</parent-name>
+            <remote-alias>HlChoice</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Visit</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Visit]</local-name>
+            <parent-name>[2011-2018_Questions.csv]</parent-name>
+            <remote-alias>Visit</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LastVisit</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[LastVisit]</local-name>
+            <parent-name>[2011-2018_Questions.csv]</parent-name>
+            <remote-alias>LastVisit</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ItvYear</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ItvYear]</local-name>
+            <parent-name>[2011-2018_Questions.csv]</parent-name>
+            <remote-alias>ItvYear</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[2011-2018_Questions.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:AF10001:no:A1:AF10001:1&quot;</attribute>
+              <attribute datatype='integer' name='lost'>0</attribute>
+              <attribute datatype='integer' name='outcome'>1</attribute>
+              <attribute datatype='integer' name='processed'>179952</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Country ISO' datatype='string' name='[CountryISO]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Date Of Birth' datatype='string' name='[DateOfBirth]' role='dimension' type='nominal' />
+      <column caption='Hierarchy Level' datatype='integer' name='[HierarchyLevel]' role='measure' type='quantitative' />
+      <column caption='Hl Choice' datatype='integer' name='[HlChoice]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Id]' role='dimension' type='ordinal' />
+      <column caption='Interview Date' datatype='string' name='[InterviewDate]' role='dimension' type='nominal' />
+      <column caption='Interview Id' datatype='integer' name='[InterviewId]' role='dimension' type='ordinal' />
+      <column caption='Is Male' datatype='integer' name='[IsMale]' role='measure' type='quantitative' />
+      <column caption='Itv Year' datatype='integer' name='[ItvYear]' role='dimension' type='quantitative' />
+      <column caption='Last Visit' datatype='integer' name='[LastVisit]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Organisation Id' datatype='integer' name='[OrganisationId]' role='dimension' type='ordinal' />
+      <column caption='Organisation Type Id' datatype='integer' name='[OrganisationTypeId]' role='dimension' type='ordinal' />
+      <column caption='Organisation Type' datatype='string' name='[OrganisationType]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Organisation]' role='dimension' type='nominal' />
+      <column caption='Parent Choice Id' datatype='integer' name='[ParentChoiceId]' role='dimension' type='ordinal' />
+      <column caption='Parent Choice' datatype='string' name='[ParentChoice]' role='dimension' type='nominal' />
+      <column caption='Parent Id' datatype='integer' name='[ParentId]' role='dimension' type='ordinal' />
+      <column caption='Parent Section' datatype='string' name='[ParentSection]' role='dimension' type='nominal' />
+      <column caption='Patients' datatype='integer' name='[PatientId]' role='dimension' type='ordinal' />
+      <column caption='Question Id' datatype='integer' name='[QuestionId]' role='dimension' type='ordinal' />
+      <column caption='Question Type Id' datatype='integer' name='[QuestionTypeId]' role='dimension' type='ordinal' />
+      <column caption='Question Type' datatype='string' name='[QuestionType]' role='dimension' type='nominal' />
+      <column caption='Response Id' datatype='integer' name='[ResponseId]' role='dimension' type='ordinal' />
+      <column caption='Root Choice Id' datatype='integer' name='[RootChoiceId]' role='dimension' type='ordinal' />
+      <column caption='Root Choice' datatype='string' name='[RootChoice]' role='dimension' type='nominal' />
+      <column caption='Root Parent Id' datatype='integer' name='[RootParentId]' role='dimension' type='ordinal' />
+      <column caption='Root Section' datatype='string' name='[RootSection]' role='dimension' type='nominal' />
+      <column caption='Section Id' datatype='integer' name='[SectionId]' role='dimension' type='ordinal' />
+      <column-instance column='[Organisation]' derivation='None' name='[none:Organisation:nk]' pivot='key' type='nominal' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.669741' measure-ordering='alphabetic' measure-percentage='0.330259' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Organisation:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;Maison d&apos;Accueil Socio-Sanitaire de Bruxelles&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Addictions asbl&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Enaden - Hébergement de Crise&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Réseau d&apos;Aide aux Toxicomanes&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Hébergement de Séjour Court&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Babel&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Interstices asbl - C.H.U St-Pierre&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Site de démonstration&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;La Trace a.s.b.l.&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Centre de Jour&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Centre médical Enaden - Unité de Consultation&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Belgium&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='2011-2018_Questions' name='federated.13se6h9059znt31asidjs1o61mub' />
+          </datasources>
+          <datasource-dependencies datasource='federated.13se6h9059znt31asidjs1o61mub'>
+            <column caption='Itv Year' datatype='integer' name='[ItvYear]' role='dimension' type='quantitative' />
+            <column datatype='string' name='[Organisation]' role='dimension' type='nominal' />
+            <column caption='Patients' datatype='integer' name='[PatientId]' role='dimension' type='ordinal' />
+            <column-instance column='[PatientId]' derivation='CountD' name='[ctd:PatientId:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[ItvYear]' derivation='None' name='[none:ItvYear:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[ItvYear]' derivation='None' name='[none:ItvYear:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Organisation]' derivation='None' name='[none:Organisation:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.13se6h9059znt31asidjs1o61mub].[none:ItvYear:qk]' included-values='in-range'>
+            <min>2014</min>
+            <max>2018</max>
+          </filter>
+          <filter class='categorical' column='[federated.13se6h9059znt31asidjs1o61mub].[none:Organisation:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Organisation:nk]' member='&quot;Centre de Jour&quot;' />
+              <groupfilter function='member' level='[none:Organisation:nk]' member='&quot;Centre médical Enaden - Unité de Consultation&quot;' />
+              <groupfilter function='member' level='[none:Organisation:nk]' member='&quot;Enaden - Hébergement de Crise&quot;' />
+              <groupfilter function='member' level='[none:Organisation:nk]' member='&quot;Hébergement de Séjour Court&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.13se6h9059znt31asidjs1o61mub].[none:ItvYear:qk]</column>
+            <column>[federated.13se6h9059znt31asidjs1o61mub].[none:Organisation:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.13se6h9059znt31asidjs1o61mub].[none:Organisation:nk]' />
+              <text column='[federated.13se6h9059znt31asidjs1o61mub].[ctd:PatientId:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.13se6h9059znt31asidjs1o61mub].[ctd:PatientId:qk]</rows>
+        <cols>([federated.13se6h9059znt31asidjs1o61mub].[none:Organisation:nk] / [federated.13se6h9059znt31asidjs1o61mub].[none:ItvYear:ok])</cols>
+      </table>
+      <simple-id uuid='{586EE07C-E627-46B5-9595-80BB2908B65B}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.5' source-height='44'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.13se6h9059znt31asidjs1o61mub].[none:Organisation:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.13se6h9059znt31asidjs1o61mub].[none:ItvYear:ok]</field>
+            <field>[federated.13se6h9059znt31asidjs1o61mub].[none:ItvYear:qk]</field>
+            <field>[federated.13se6h9059znt31asidjs1o61mub].[none:Organisation:nk]</field>
+            <field>[federated.13se6h9059znt31asidjs1o61mub].[none:PatientId:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{79B8946F-6AE0-4203-A735-B2C457857DA0}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
